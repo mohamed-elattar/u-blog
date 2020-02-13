@@ -3,9 +3,28 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { ListErrorsComponent } from './list-errors/list-errors.component';
+import { ShowAuthedDirective } from './show-authed.directive';
+import { FollowButtonComponent } from './buttons/follow-button/follow-button.component';
+import { FavoriteButtonComponent } from './buttons/favorite-button/favorite-button.component';
+import { ArticleListComponent } from './article-helpers/article-list/article-list.component';
+import { ArticleMetaComponent } from './article-helpers/article-meta/article-meta.component';
+import { ArticlePreviewComponent } from './article-helpers/article-preview/article-preview.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    ListErrorsComponent,
+    ShowAuthedDirective,
+    FollowButtonComponent,
+    FavoriteButtonComponent,
+    ArticleListComponent,
+    ArticleMetaComponent,
+    ArticlePreviewComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -18,7 +37,16 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    HeaderComponent,
+    FooterComponent,
+    ListErrorsComponent,
+    ShowAuthedDirective,
+    FollowButtonComponent,
+    FavoriteButtonComponent,
+    ArticleListComponent,
+    ArticleMetaComponent,
+    ArticlePreviewComponent
   ]
 })
 export class SharedModule {}
