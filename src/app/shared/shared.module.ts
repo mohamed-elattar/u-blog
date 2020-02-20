@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
 import { ListErrorsComponent } from './list-errors/list-errors.component';
 import { ShowAuthedDirective } from './show-authed.directive';
 import { FollowButtonComponent } from './buttons/follow-button/follow-button.component';
@@ -15,8 +13,6 @@ import { ArticlePreviewComponent } from './article-helpers/article-preview/artic
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    FooterComponent,
     ListErrorsComponent,
     ShowAuthedDirective,
     FollowButtonComponent,
@@ -38,8 +34,6 @@ import { ArticlePreviewComponent } from './article-helpers/article-preview/artic
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule,
-    HeaderComponent,
-    FooterComponent,
     ListErrorsComponent,
     ShowAuthedDirective,
     FollowButtonComponent,
