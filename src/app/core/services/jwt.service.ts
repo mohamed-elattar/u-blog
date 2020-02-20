@@ -10,7 +10,6 @@ export class JwtService {
     return window.localStorage.getItem('jwtToken');
   }
   saveToken(token: string) {
-   // window.localStorage.jwtToken = token;
     window.localStorage.setItem('jwtToken', token);
   }
   destroyToken() {

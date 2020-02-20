@@ -39,7 +39,6 @@ export class SettingsComponent implements OnInit {
 
   submitForm() {
     this.isSubmitting = true;
-    console.log(this.settingsForm.value);
     this.updateUser(this.settingsForm.value);
     this.userService.update(this.user).subscribe(
       updatedUser =>

@@ -21,9 +21,7 @@ export class NoAuthGuard implements CanActivate {
   ): Observable<boolean> {
     return this.userService.isAuthenticated.pipe(
       take(1),
-      tap(res => console.log('no auth res after take', res)),
       map(isAuth => !isAuth),
-      tap(res => console.log('no auth res after map', res))
     );
   }
 }

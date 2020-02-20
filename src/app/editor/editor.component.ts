@@ -43,7 +43,8 @@ export class EditorComponent implements OnInit {
   }
   addTag() {
     const tag = this.tagField.value;
-    if (this.article.tagList.indexOf(tag) < 0 && tag != null) {
+
+    if (this.article.tagList.indexOf(tag) < 0 && tag) {
       this.article.tagList.push(tag);
     }
     this.tagField.reset('');
